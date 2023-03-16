@@ -16,7 +16,6 @@ interface Props {
 
 const TaskForm = ({btnText, taskList, setTaskList, task, handleUpdate}: Props) => {
 
-  // setando estados iniciais
   const [id, setId] = useState<number>(0);
   const [title, setTitle] = useState<string>("");
   const [difficulty, setDifficulty] = useState<number>(0);
@@ -29,7 +28,6 @@ const TaskForm = ({btnText, taskList, setTaskList, task, handleUpdate}: Props) =
     }
   }, [task])
 
-  // inclusão de tarefas no sistema
   const addTaskHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
